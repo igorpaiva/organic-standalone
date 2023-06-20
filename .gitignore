@@ -3,5 +3,4 @@
 build
 *.lock
 out
-*.properties
-smells.json
+*.json

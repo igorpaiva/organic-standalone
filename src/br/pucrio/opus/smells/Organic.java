@@ -108,7 +108,7 @@ public class Organic {
 		System.out.println("Saving smells file...");
 
 		GsonBuilder builder = new GsonBuilder();
-		builder.addSerializationExclusionStrategy(new ObservableExclusionStrategy());
+		builder.setExclusionStrategies(new ObservableExclusionStrategy());
 		builder.disableHtmlEscaping();
 		builder.setPrettyPrinting();
 		builder.serializeNulls();
